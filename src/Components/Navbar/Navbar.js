@@ -1,8 +1,9 @@
 import React from "react";
 import NavItem from "./NavItem";
+import CartWidget from "./CartWidget";
 
 const Navbar = () => {
-  const navItemText = ["Inicio", "Sobre Nosotros", "Contacto"];
+  const navItemText = ["Inicio", "Productos", "Sobre Nosotros", "Contacto"];
   return (
     <div>
       <div className="container-fluid">
@@ -33,11 +34,8 @@ const Navbar = () => {
                   <NavItem key={index} navText={texto} />
                 ))}
               </ul>
+              <CartWidget/>
             </div>
-            <i
-              className="fa-solid fa-cart-shopping"
-              style={{ color: "#f9fafb" }}
-            ></i>
           </div>
         </nav>
       </div>

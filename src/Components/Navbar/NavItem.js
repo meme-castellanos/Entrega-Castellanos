@@ -4,9 +4,8 @@ const NavItem = (props) => {
   return (
     <div>
       <li className="nav-item">
-        <p className="nav-link active" aria-current="page" >
-          {props.navText}
-        </p>
+        <button style={{backgroundColor:"transparent" , color:"whitesmoke" , border:"none"}} aria-current="page" >
+          {props.navText}</button>
       </li>
     </div>
   );
