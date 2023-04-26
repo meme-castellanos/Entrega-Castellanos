@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="App">
       
-      <ItemListContainer greeting="Bienvenidos!" />
       <Container>
+      <ItemListContainer greeting="Bienvenidos!" />
       <Cards/>
       </Container>
       
