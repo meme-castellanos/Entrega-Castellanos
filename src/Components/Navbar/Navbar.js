@@ -6,8 +6,8 @@ const Navbar = () => {
   const navItemText = ["Inicio", "Productos", "Sobre Nosotros", "Contacto"];
   return (
     <div>
-      <div className="container-fluid">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="d-flex">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center vw-100">
           <div className="container-fluid">
             <img
               width="50"
@@ -16,7 +16,7 @@ const Navbar = () => {
               alt="Logo"
               src="https://cdn-icons-png.flaticon.com/512/10218/10218062.png"
             />
-            <p className="navbar-brand">Memê Perfumerías</p>
+            <p className="navbar-brand text-center" style={{margin:'0'}}>Beauty Scents</p>
             <button
               className="navbar-toggler"
               type="button"
@@ -29,13 +29,13 @@ const Navbar = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav flex-row flex-wrap mx-auto bd-navbar-nav pt-2 py-md-0">
                 {navItemText.map((texto,index) => (
                   <NavItem key={index} navText={texto} />
                 ))}
               </ul>
-              <CartWidget/>
             </div>
+              <CartWidget/>
           </div>
         </nav>
       </div>

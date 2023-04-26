@@ -1,14 +1,23 @@
 
 import './App.css';
-import Cards from './Components/Main/Cards';
-import Navbar from './Components/Navbar/Navbar';
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import Container from './Components/Layout/Container';
+import Cards from './Components/Pages/Cards';
+
+
+
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      
+      <ItemListContainer greeting="Bienvenidos!" />
+      <Container>
       <Cards/>
+      </Container>
+      
+      
      
     </div>
   );
