@@ -12,7 +12,7 @@ const Cards = () => {
       stock: 5,
     },
     {
-      titulo: "Carolina Herrrera",
+      titulo: "Carolina Herrera",
       imagen:
         "https://elbalconar.vtexassets.com/arquivos/ids/158395-500-auto?v=1769727036&width=500&height=auto&aspect=true",
       descripcion: "CH EDT - 30ml",

@@ -1,4 +1,5 @@
 import React from "react";
+import Contador from "../Contador/Contador";
 
 const ProductCard = (props) => {
   const { titulo, imagen, descripcion, precio, stock } = props;
@@ -12,7 +13,7 @@ const ProductCard = (props) => {
         <p className="text-muted mb-0">
           Stock: <span className="fw-bold">{stock}</span>
         </p>
-        <button className="btn btn-outline-secondary">Agregar al carrito</button>
+        <Contador/>
       </div>
     </div>
   );
