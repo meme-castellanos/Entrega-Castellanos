@@ -8,13 +8,14 @@ import Cards from './Components/Pages/Cards';
 
 
 
+
 function App() {
   return (
     <div className="App">
       
       <Container>
-      <ItemListContainer greeting="Bienvenidos!" />
-      <Cards/>
+        <ItemListContainer/>
+        <Cards/>
       </Container>
       
       

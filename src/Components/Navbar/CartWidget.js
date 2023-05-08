@@ -2,8 +2,8 @@ import React from "react";
 
 const CartWidget = () => {
   return (
-    <div className="ml-auto">
-      <div >
+    <div className="ml-auto bg-dark pb-2 pr-2">
+      <div className="d-flex justify-content-end">
         <button type="button" className="btn btn-secondary position-relative">
           <i
             className="fa-solid fa-cart-shopping"

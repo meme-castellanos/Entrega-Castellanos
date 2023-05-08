@@ -1,27 +1,18 @@
 import React from "react";
 
-const ProductCard = () => {
+const ProductCard = (props) => {
+  const { titulo, imagen, descripcion, precio, stock } = props;
   return (
-    <div className="card">
-      <div className="d-flex justify-content-center p-3">
-        <p className="lead mb-0">Producto</p>
-      </div>
-      <img
-        src="https://elbalconar.vtexassets.com/arquivos/ids/187561-500-auto?v=1768690283&width=500&height=auto&aspect=true"
-        className="card-img-top"
-        alt="Gaming Laptop"
-      />
+    <div className="card m-2 mt-3" style={{width: "18rem"}}>
+      <img src={imagen} className="card-img-top" alt="Perfume" />
       <div className="card-body">
-        <div className="d-flex justify-content-between mb-3">
-          <h5 className="mb-0">Good Girl - Carolina Herrera</h5>
-          <h5 className="text-dark mb-0">$48000</h5>
-        </div>
-
-        <div className="d-flex justify-content-between mb-2">
-          <p className="text-muted mb-0">
-            Stock: <span className="fw-bold">5</span>
-          </p>
-        </div>
+        <h5 className="card-title bg-dark" style={{color:"whitesmoke"}}>{titulo}</h5>
+        <p className="card-text">{descripcion}</p>
+        <h5 className="text-dark mb-0">${precio}</h5>
+        <p className="text-muted mb-0">
+          Stock: <span className="fw-bold">{stock}</span>
+        </p>
+        <button className="btn btn-outline-secondary">Agregar al carrito</button>
       </div>
     </div>
   );
